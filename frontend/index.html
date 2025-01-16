@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader File</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="dropzone-box">
+        <h2>Carregar arquivo</h2>
+        <p>Clique para carregar ou arraste e solte.</p>
+        <div class="dropzone-area">
+            <div class="file-upload-icon">
+                <!-- svg file upload -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11 20H6.5q-2.275 0-3.887-1.575T1 14.575q0-1.95 1.175-3.475T5.25 9.15q.625-2.3 2.5-3.725T12 4q2.925 0 4.963 2.038T19 11q1.725.2 2.863 1.488T23 15.5q0 1.875-1.312 3.188T18.5 20H13v-7.15l1.6 1.55L16 13l-4-4l-4 4l1.4 1.4l1.6-1.55z"/>
+                </svg>
+            </div>
+            <input type="file" required name="upload-file" id="upload-file" accept="image/*">
+            <div class="file-info">
+                <p>Nenhum arquivo selecionado</p>
+            </div>
+        </div>
+        <div class="dropzone-description">
+            <span>Formatos suportados: JPEG, JPG, PNG,<br/>SVG, PDF, WORD, ...</span>
+            <span>Tamanho máximo: 25MB</span>
+        </div>
+        <div class="dropzone-actions">
+            <div class="dropzone-help">
+                <!-- central de ajuda -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M11.95 18q.525 0 .888-.363t.362-.887t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362m-.9-3.85h1.85q0-.825.188-1.3t1.062-1.3q.65-.65 1.025-1.238T15.55 8.9q0-1.4-1.025-2.15T12.1 6q-1.425 0-2.312.75T8.55 8.55l1.65.65q.125-.45.563-.975T12.1 7.7q.8 0 1.2.438t.4.962q0 .5-.3.938t-.75.812q-1.1.975-1.35 1.475t-.25 1.825M12 22q-2.075 0-3.9-.787t-3.175-2.138T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/>
+                </svg>
+                 Central de ajuda!
+            </div>
+            <div>
+                <button type="reset">Cancelar</button>
+                <button type="submit" id="submit-button">Salvar</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
